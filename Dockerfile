@@ -13,5 +13,4 @@ RUN curl -L ${MODEL_URL} -o /model.gguf
 EXPOSE 8080
 
 # Chạy server llama.cpp với giao thức tương thích OpenAI API
-ENTRYPOINT ["/llama-server"]
 CMD ["-m", "/model.gguf", "-c", "2048", "--port", "8080", "--host", "0.0.0.0"]
