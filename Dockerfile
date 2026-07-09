@@ -1,5 +1,5 @@
 # Sử dụng image chính thức của llama.cpp (bản chạy CPU tối ưu)
-FROM ghcr.io/ggerganov/llama.cpp:server
+FROM ggerganov/llama.cpp:server
 
 # Thiết lập biến môi trường
 ENV PORT=8080
